@@ -178,20 +178,13 @@ curl -X POST http://localhost:8080/api/v1/employees \
 
 ## Image Gallery
 
-Use this section to showcase your real UI screenshots.
+### Student Management UI
 
-| Screen | Suggested File |
-|---|---|
-| Dashboard | `docs/images/dashboard.png` |
-| Add Student Form | `docs/images/add-student.png` |
-| Edit Student Modal | `docs/images/edit-student.png` |
-| Delete Confirmation | `docs/images/delete-student.png` |
+![Application Dashboard](src/main/resources/Screenshot%202026-03-14%20203418.png)
 
-After adding screenshots, embed them like this:
+### GCP Cloud Storage Bucket
 
-```markdown
-![Dashboard](docs/images/dashboard.png)
-```
+![Student Form and Table](src/main/resources/Screenshot%202026-03-14%20215057.png)
 
 ## Security Essentials
 
