@@ -1,0 +1,52 @@
+<svg width="1200" height="520" viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="System architecture diagram">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eef7ff"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f1f7ff"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#3a506b"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="520" fill="url(#bg)"/>
+
+  <text x="600" y="48" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#1f2937">
+    Cloud Architecture Overview
+  </text>
+
+  <rect x="70" y="100" width="260" height="110" rx="16" fill="url(#box)" stroke="#9bbad2" stroke-width="2"/>
+  <text x="200" y="145" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2937">Web Browser</text>
+  <text x="200" y="176" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#334155">HTML + CSS + JavaScript</text>
+
+  <rect x="450" y="78" width="300" height="170" rx="16" fill="url(#box)" stroke="#7ca7cb" stroke-width="2.5"/>
+  <text x="600" y="128" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2937">Spring Boot API</text>
+  <text x="600" y="161" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#334155">EmployeeController + JPA</text>
+  <text x="600" y="190" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#334155">/api/v1/employees</text>
+
+  <rect x="875" y="100" width="260" height="110" rx="16" fill="url(#box)" stroke="#9bbad2" stroke-width="2"/>
+  <text x="1005" y="145" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2937">Google Cloud</text>
+  <text x="1005" y="176" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#334155">Storage Bucket</text>
+
+  <rect x="280" y="320" width="260" height="120" rx="16" fill="url(#box)" stroke="#9bbad2" stroke-width="2"/>
+  <text x="410" y="368" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2937">PostgreSQL</text>
+  <text x="410" y="398" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#334155">Employee records</text>
+
+  <rect x="660" y="320" width="260" height="120" rx="16" fill="url(#box)" stroke="#9bbad2" stroke-width="2"/>
+  <text x="790" y="368" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="700" fill="#1f2937">GCSImageService</text>
+  <text x="790" y="398" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#334155">Upload/Delete image URLs</text>
+
+  <line x1="330" y1="155" x2="450" y2="155" stroke="#3a506b" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="750" y1="155" x2="875" y2="155" stroke="#3a506b" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="560" y1="248" x2="460" y2="320" stroke="#3a506b" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="640" y1="248" x2="740" y2="320" stroke="#3a506b" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <text x="600" y="484" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#475569">
+    UI requests flow through REST endpoints, data persists in PostgreSQL, images persist in GCS
+  </text>
+</svg>
+
