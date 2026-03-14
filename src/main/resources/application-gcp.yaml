@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: Cloud-Relational-Databases-in-Action
+
+  datasource:
+    url: jdbc:postgresql://34.93.174.151:5432/eca
+    username: postgres
+    password: psql
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+  data:
+    rest:
+      base-path: /api/v1
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+server:
+  port: 8080
+  servlet:
+    context-path: /

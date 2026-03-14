@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Cloud-Relational-Databases-in-Action
+
+  profiles:
+    active: dev
+
+
+  data:
+    rest:
+      base-path: /api/v1
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+gcp:
+   project-id: eca-bucket
+   credentials-location: /eca-bucket-a8069afe6337.json
+   bucket-id: its2130-eca-achini-storage
